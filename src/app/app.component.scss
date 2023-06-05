@@ -1,0 +1,96 @@
+.logo-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff8080;
+}
+
+.logo-amp {
+  color: #ff8080;
+}
+
+.is-pointer {
+  cursor: pointer;
+}
+
+.floating-menu {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #fef1e6; /* Light peach background color */
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  z-index: 9999;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  margin-bottom: 0;
+  border-bottom: 1px solid #ff8080;; /* Light orange line of separation */
+}
+
+.menu-list li:last-child {
+  border-bottom: none;
+}
+
+.menu-list a {
+  color: #333333; /* Dark purple text color */
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+  border-radius: 4px;
+}
+
+.menu-list a:hover {
+  transform: scale(1.1) rotate(3deg);
+  background-color: #ffd6ba; /* Light orange background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-list a:focus {
+  outline: none;
+  background-color: #ffbb9e; /* Lighter orange background color when focused */
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.footer {
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Styles for screens below 1200px */
+@media (min-width: 1199px) {
+  /* Add your mobile-specific styles here */
+  .footer {
+    .mobile {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  /* Add more styles as needed */
+}
