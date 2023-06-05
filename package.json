@@ -2,7 +2,7 @@
   "name": "clothing-shop",
   "version": "0.0.0",
    "engines": {
-    "node": "16.20.0"
+    "node": "16.17.0"
   },
   "scripts": {
     "ng": "ng",
@@ -11,7 +11,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^16.0.0",
     "@angular/common": "^16.0.0",
